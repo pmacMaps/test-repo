@@ -3,7 +3,7 @@
 // function to set name of municipality
 export const setMuniName = (name) => {
    // element to display content
-   const uiEl = document.getElementById('municipalName');
+   const uiEl = document.getElementById('municipalCode');
    // set content of element
    uiEl.innerHTML = name;
 }
@@ -18,7 +18,7 @@ export const getMuniName = (pin) => {
    // set URL based upon muni code
    switch(muniCode) {
          // Camp Hill
-         case '01':
+         case '99':
             name = 'Camp Hill Borough';
             break;
          // Carlisle
@@ -111,7 +111,7 @@ export const getMuniName = (pin) => {
             break;
          // Mt. Holly Springs
          case '23':
-            name = 'Mt. Holly Springs Borough';
+            name = 'Mount Holly Springs Borough';
             break;
          // Newburg
          case '24':
